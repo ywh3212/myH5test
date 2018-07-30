@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <style>
+        @keyframes k{
+            0%{
+                transform:translate(0) rotate(0);
+                background:red;
+                color:black;
+            }
+            100%{
+                transform:translate(800px) rotate(360deg);
+                background:black;
+                color:yellow;
+            }
+        }
+
+
+        p{
+            width:200px;
+            height:200px;
+            background:red;
+            border-radius:100px;
+            font-size:100px;
+            text-align:center;
+            line-height:200px;
+            margin:0;
+            animation:k 3s linear infinite;
+        }
+    </style>
+</head>
+<body>
+<p>滚</p>
+</body>
+</html>
