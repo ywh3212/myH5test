@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易的计算器</title>
+    <style>
+        div{
+            width:360px;
+            margin:0 auto;
+            border:4px solid #614861;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        p{
+            margin:4px 0px 4px 4px;
+            border:4px solid #ffffff;
+            border-radius: 4px;
+            width: 345px;
+            height: 74px;
+            float: left;
+            line-height: 74px;
+            color: blue;
+            text-align: right;
+            font-size: 60px;
+        }
+        input{
+            width: 90px;
+            height: 90px;
+            float: left;
+            border: 4px solid #2d2929;
+            border-radius: 4px;
+            magin:4px 0 4px 4px;
+            font-size: 40px;
+        }
+        #jieguo{
+            border-bottom-color: #614861;
+        }
+        #m,#n {
+            width: 180px;
+        }
+        #m{
+            background-color: red;
+        }
+        #n{
+            background-color: aqua;
+        }
+    </style>
+    <script type="text/javascript">
+        function fn(b) {
+            var p=document.getElementById("jieguo");
+            if(b.value=="清除结果"){
+                p.innerText="";
+            }else  if(b.value=="等于"){
+                p.innerText=eval(p.innerText);
+            }else{
+                p.innerText+=b.value;
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="div1">
+    <p id="jieguo"></p>
+    <input type="button" value="1" onclick="fn(this)">
+    <input type="button" value="2" onclick="fn(this)">
+    <input type="button" value="3" onclick="fn(this)">
+    <input type="button" value="+" onclick="fn(this)">
+    <input type="button" value="4" onclick="fn(this)">
+    <input type="button" value="5" onclick="fn(this)">
+    <input type="button" value="6" onclick="fn(this)">
+    <input type="button" value="-" onclick="fn(this)">
+    <input type="button" value="7" onclick="fn(this)">
+    <input type="button" value="8" onclick="fn(this)">
+    <input type="button" value="9" onclick="fn(this)">
+    <input type="button" value="0" onclick="fn(this)">
+    <br>
+    <input id="m" type="button" value="清除结果" onclick="fn(this)">
+    <input id="n"type="button" value="等于" onclick="fn(this)">
+
+</div>
+
+</body>
+</html>

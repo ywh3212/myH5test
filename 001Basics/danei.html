@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>达内光谷</title>
+    <style>
+        body{background:url(./images/2.gif) no-repeat;
+            background-size:100% 100%;
+            background-attachment:fixed;
+            padding:0 8%;
+        }
+        h1{color:#ff0000;text-align:center;}
+        img:hover{transform:scale(1.2)}
+        @keyframes k{
+            0%{transform:rotate(0)}
+            100%{transform:rotate(360deg)}
+        }
+        #tupian1{border-radius:50%;float:left;width:35%;}
+        #tupian2{border-radius:25%;float:right;width:35%;}
+        #tupian3{border-radius:50%;float:left;width:35%;
+            animation:k 2s linear infinite;background:black;
+        }
+        #p1{float:right;width:60%;font-size:20px;margin-top:55px;}
+        #p2{float:left;width:60%;font-size:20px;margin-top:55px;}
+        #p3{float:right;width:60%;font-size:20px;margin-top:55px;}
+        div{display:block;}
+        div:after{content:"";display:table;clear:both;margin:50px 0 50px 0;}
+        @keyframes rotate{
+            0%{transform:rotate(0deg)}
+            10%{transform:rotate(72deg) scale(1);opacity:0.7}
+            20%{transform:rotate(144deg) scale(0.9);opacity:0.6}
+            30%{transform:rotate(216deg) scale(0.8);opacity:0.5}
+            40%{transform:rotate(288deg) scale(0.6);opacity:0.4}
+            50%{transform:rotate(360deg) scale(0.4);opacity:0.2}
+            60%{transform:rotate(432deg) scale(0.4);opacity:0.1}
+            70%{transform:rotate(504deg) scale(0.6);opacity:0.2}
+            80%{transform:rotate(576deg) scale(0.8);opacity:0.4}
+            90%{transform:rotate(648deg) scale(0.9);opacity:0.6}
+            100%{transform:rotate(720deg) scale(1);opacity:0.7}
+        }
+        #box1{animation:rotate 10s linear infinite;position:relative}
+        #box2{animation:rotate 2s linear infinite;position:absolute;top:10%;left:10%}
+        #box3{animation:rotate 2s linear infinite;position:absolute;top:20%;left:20%}
+        #box4{animation:rotate 2s linear infinite;position:absolute;top:30%;left:30%}
+        #box5{animation:rotate 2s linear infinite;position:absolute;top:40%;left:40%}
+        #box6{animation:rotate 2s linear infinite;position:absolute;top:50%;left:50%}
+        #box7{animation:rotate 2s linear infinite;position:absolute;top:60%;left:60%}
+        #box1>div{width:200px;height:200px;}
+        .tl{border-top-left-radius:200px}
+        .tr{border-top-right-radius:200px}
+        .bl{border-bottom-left-radius:200px}
+        .br{border-bottom-right-radius:200px}
+        .wd{width:100px;height:50px}
+        .hei{width:50px;height:100px}
+        .red{background:red;float:right;margin-top:50px}
+        .blue{background:blue;float:right;}
+        .yellow{background:yellow;float:left;}
+        .green{background:green;float:left;}
+        table th img{border-radius:17px;}
+        textarea{width:100%;background:transparent;font-size:26px;
+            color:#fee;border:4px solid #614861;
+        }
+        video{box-shadow:0px 0px 50px 20px #2d2929;}
+    </style>
+</head>
+<body>
+<audio src="./mav/aqax.mp3" autoplay controls loop></audio>
+
+<h1>武汉达内光谷中心</h1>
+<h2>达内宣传片:</h2>
+
+<center><video src="./mav/dnsp.mp4" controls loop></video></center>
+
+<h2>达内简介:</h2>
+<div>
+    <img id="tupian1" src="./images/timg.jpg" >
+    <p id="p1">
+        &nbsp; &nbsp;<a href="http://www.tmooc.cn">达内时代科技集团是中国职业教育的领先品牌。</a>
+        <br>&nbsp; &nbsp;4月3日，达内时代科技集团成功在美国纳斯达克上市。根据IDC的数据，达内时代科技集团目前市场份额超过8.3%。
+        <br>&nbsp; &nbsp; 达内时代科技集团致力于培养面向电信和金融领域的Java、C++、C#/.Net、3G/Android、3G/IOS、 PHP、嵌入式、
+        软件测试、UID、互联网营销、主办会计、Web前端等14大课程方向中高端软件人才，先后获得美国国际数据集团IDG、集富亚洲JAFCO ASIA、美国高盛银行的三轮投资。
+        <br> &nbsp; &nbsp; 达内时代科技集团经过14年运营，以中关村科技园区为依托，在中国软件业发达城市——北京、上海、广州、深圳、大连、
+        南京、武汉、杭州、西安、苏州、成都、太原40个大城市，建立140多个职业教育中心。
+        <br> &nbsp; &nbsp; 已累计为IBM、微软、摩托罗拉、华为、中软、用友、Yahoo、阿里巴巴、TOM、新浪、搜狐、百度、联想、
+        神州数码、大唐电信、亚信等知名IT企业培养输送了28万多名中高级软件人才。
+    </p>
+</div>
+
+<div>
+    <img id="tupian2" src="./images/troom.jpg" >
+    <p id="p2">
+        &nbsp; &nbsp; 武汉达内IT培训中心位于武汉市东湖开发区关山一路20号，
+        教学硬件设施齐全，有专业教室供学员使用，一人一机专用，
+        课余时间免费对学员开放，项目老师值班辅导。采用国际领先的C+E课程体系。
+        <br> &nbsp; &nbsp; 该课程体系借鉴欧美、日韩的成功经验，充分考虑中国人的学习背景及学习特点，
+        依据各大中型软件企业的人才需求，经过达内科技专家顾问团的充分论证，
+        推出的的一套针对大中型软件公司的软件开发课程培训体系—C+E高级软件开发工程师课程体系。
+        <br> &nbsp; &nbsp; 所有实训均采用全程项目驱动教学的方式，学员在实践中学习技术，用实践来检验技术的学习，
+        通过课堂作业、项目开发演练与企业级项目开发实战，实训过程中完成行有效代码，帮助学员迅速提高动手能力，累积开发经验，实训合格的学员可具备1-2年企业级开发经
+
+    </p>
+</div>
+
+<div>
+    <img id="tupian3" src="./images/b.gif" style="margin-left:75px" width="300px" height="300px" >
+    <p id="p3">
+        &nbsp; &nbsp; 我是一个对理想有着执着追求的人，坚信是金子总会发光。
+        <br> &nbsp; &nbsp; 大学毕业后的工作，让我在文案策划方面有了很大的提高，文笔流畅，熟悉传媒工作、广告学制作与设计等工作方面。
+        为人热情，活泼，大方， 本人好学上进，诚信、敬业、责任心强，有强烈的团体精神，对工作认真积极，严谨负责
+        。<br> &nbsp; &nbsp; 本人性格内外结合,适应能力强，为人诚实，有良好的人际交往能力，具备相关的专业知识和认真。
+        细心、耐心的工作态度及良好的职业道德修养。相信团体精神的我对工作认真负责，总希望能把事情做得更好! 性格开朗
+        ，对文字语言和数字敏感，对生活充满希望，对工作充满热情! 能在短期间内适应新环境，有强烈的品质意识;对工作认真负责，上进心强!
+        懂电脑基本操作，熟练小键盘操作!
+    </p>
+</div>
+
+<div id="box1">
+    <div id="box2">
+        <div class="red wd tl tr"></div>
+        <div class="blue hei tl bl"></div>
+        <div class="yellow wd bl br"></div>
+        <div class="green hei tr br"></div>
+    </div>
+    <div id="box3">
+        <div class="red wd tl tr"></div>
+        <div class="blue hei tl bl"></div>
+        <div class="yellow wd bl br"></div>
+        <div class="green hei tr br"></div>
+    </div>
+    <div id="box4">
+        <div class="red wd tl tr"></div>
+        <div class="blue hei tl bl"></div>
+        <div class="yellow wd bl br"></div>
+        <div class="green hei tr br"></div>
+    </div>
+    <div id="box5">
+        <div class="red wd tl tr"></div>
+        <div class="blue hei tl bl"></div>
+        <div class="yellow wd bl br"></div>
+        <div class="green hei tr br"></div>
+    </div>
+    <div id="box6">
+        <div class="red wd tl tr"></div>
+        <div class="blue hei tl bl"></div>
+        <div class="yellow wd bl br"></div>
+        <div class="green hei tr br"></div>
+    </div>
+    <div id="box7">
+        <div class="red wd tl tr"></div>
+        <div class="blue hei tl bl"></div>
+        <div class="yellow wd bl br"></div>
+        <div class="green hei tr br"></div>
+    </div>
+</div>
+
+<table width="80%" align="center">
+    <caption><h2>课程体系</h2></caption>
+    <tbody>
+    <tr>
+        <th><img src="./images/img01.jpg"></th>
+        <th><img src="./images/img02.jpg"></th>
+        <th><img src="./images/img03.jpg"></th>
+        <th><img src="./images/img04.jpg"></th>
+        <th><img src="./images/img05.jpg"></th>
+    </tr>
+    <tr>
+        <th><img src="./images/img06.jpg"></th>
+        <th><img src="./images/img07.jpg"></th>
+        <th><img src="./images/img08.jpg"></th>
+        <th><img src="./images/img09.jpg"></th>
+        <th><img src="./images/img10.jpg"></th>
+    </tr>
+    <tr>
+        <th><img src="./images/img11.jpg"></th>
+        <th><img src="./images/img12.jpg"></th>
+        <th><img src="./images/img13.jpg"></th>
+        <th><img src="./images/img14.jpg"></th>
+        <th><img src="./images/img15.jpg"></th>
+    </tr>
+    </tbody>
+</table>
+<br>
+<table width="80%"  border=1 cellspacing="0" align="center" cellpadding="5px">
+    <caption><h2>训练营课程表</h2></caption>
+    <tbody>
+    <tr>
+        <td>day01</td>
+        <td>day02</td>
+        <td>day03</td>
+        <td>day04</td>
+        <td>day05</td>
+    </tr>
+    <tr>
+        <td>html</td>
+        <td>表格</td>
+        <td>浮动</td>
+        <td>转换</td>
+        <td>动画</td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<caption><h2 align="center">个人建议及反馈</h2></caption>
+
+<div style="width:80%;margin:50px auto">
+    <textarea rows=6></textarea>
+</div>
+
+</body>
+
+
+</html>
