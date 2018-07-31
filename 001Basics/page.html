@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>季节交替</title>
+    <style>
+        html,body,page{
+            height:100%;
+            width:100%;
+            margin:0;
+        }
+        page{
+            height: 100%;
+            font-size: 130px;
+            padding-top: 35%;
+            padding-left:30%;
+            position:absolute;
+        }
+        #c{
+            background-color: lightgreen;
+            animation :c 10s infinite;
+            animation-timing-function:linear;
+        }
+        #x{
+            background-color: red;
+            animation :x 10s infinite;
+            animation-timing-function:linear;
+        }
+        #q{
+            background-color: #faf216;
+            animation :q 10s infinite;
+            animation-timing-function:linear;
+        }
+        #d{
+            background-color: black;
+            color: #e9ffe5;
+            animation :d 10s infinite;
+            animation-timing-function:linear;
+        }
+        @keyframes c {
+            0%{opacity:0}
+            25%{opacity:100}
+            50%{opacity:0}
+            75%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes x {
+            0%{opacity:0}
+            25%{opacity:0}
+            50%{opacity:100}
+            75%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes q {
+            0%{opacity:0}
+            25%{opacity:0}
+            50%{opacity:0}
+            75%{opacity: 100}
+            100%{opacity: 0}
+        }
+        @keyframes d {
+            0%{opacity:0}
+            25%{opacity:0}
+            50%{opacity:0}
+            75%{opacity: 0}
+            100%{opacity: 100}
+        }
+    </style>
+</head>
+<body>
+    <page id="c">春</page>
+    <page id="x">夏</page>
+    <page id="q">秋</page>
+    <page id="d">冬</page>
+</body>
+</html>
